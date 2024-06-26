@@ -93,6 +93,7 @@ highlight PmenuSbar ctermfg=233 ctermbg=244 gui=none guifg=#121212 guibg=#808080
 highlight PmenuThumb ctermfg=233 ctermbg=239 gui=none guifg=#121212 guibg=#4e4e4e
 highlight Search cterm=reverse ctermfg=178 ctermbg=236 gui=reverse guifg=#dfaf00 guibg=#303030
 highlight IncSearch cterm=reverse ctermfg=136 ctermbg=236 gui=reverse guifg=#af8700 guibg=#303030
+highlight CurSearch cterm=reverse ctermfg=172 ctermbg=236 gui=reverse guifg=#af8700 guibg=#303030
 highlight QuickFixLine cterm=bold ctermfg=none ctermbg=none gui=bold guifg=NONE guibg=NONE
 highlight SpellBad term=none cterm=none ctermbg=52 gui=none guibg=#5f0000
 highlight default link SpellCap SpellBad
