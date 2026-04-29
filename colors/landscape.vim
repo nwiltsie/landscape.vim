@@ -67,14 +67,14 @@ highlight default link ErrorMsg Error
 highlight Ignore ctermbg=none gui=none guifg=bg
 highlight ModeMsg ctermfg=none guifg=bg guibg=bg
 
-highlight VertSplit term=none gui=none guifg=black guibg=darkgray gui=none ctermfg=black ctermbg=darkgray cterm=none
+highlight VertSplit term=none guifg=black guibg=darkgray gui=none ctermfg=black ctermbg=darkgray cterm=none
 highlight Folded term=none ctermfg=247 ctermbg=235 guifg=#9e9e9e guibg=#262626
 highlight FoldColumn term=none ctermfg=247 ctermbg=235 guifg=#9e9e9e guibg=#262626
 highlight SignColumn term=none ctermfg=247 ctermbg=235 guifg=#9e9e9e guibg=#262626
 highlight SpecialKey term=underline ctermfg=237 gui=none guifg=darkgray
 highlight NonText term=none ctermfg=black gui=none guifg=black
-highlight StatusLine term=none gui=none guifg=#1c1c1c guibg=#eeeeee gui=none ctermfg=234 ctermbg=255 cterm=none
-highlight StatusLineNC term=none gui=none guifg=#262626 guibg=#585858 gui=none ctermfg=235 ctermbg=240 cterm=none
+highlight StatusLine term=none guifg=#1c1c1c guibg=#eeeeee gui=none ctermfg=234 ctermbg=255 cterm=none
+highlight StatusLineNC term=none guifg=#262626 guibg=#585858 gui=none ctermfg=235 ctermbg=240 cterm=none
 if get(g:, 'landscape_cursorline', 1)
   highlight CursorLine term=none cterm=none ctermbg=235 gui=none guibg=#262626
   highlight CursorLineNr term=underline cterm=bold ctermfg=148 ctermbg=235 gui=bold guifg=#afdf00 guibg=#262626
@@ -92,7 +92,6 @@ highlight PmenuSel ctermfg=233 ctermbg=242 gui=none guifg=#121212 guibg=#666666
 highlight PmenuSbar ctermfg=233 ctermbg=244 gui=none guifg=#121212 guibg=#808080
 highlight PmenuThumb ctermfg=233 ctermbg=239 gui=none guifg=#121212 guibg=#4e4e4e
 highlight Search cterm=reverse ctermfg=178 ctermbg=236 gui=reverse guifg=#dfaf00 guibg=#303030
-highlight IncSearch cterm=reverse ctermfg=136 ctermbg=236 gui=reverse guifg=#af8700 guibg=#303030
 highlight CurSearch cterm=reverse ctermfg=172 ctermbg=236 gui=reverse guifg=#af8700 guibg=#303030
 highlight QuickFixLine cterm=bold ctermfg=none ctermbg=none gui=bold guifg=NONE guibg=NONE
 highlight SpellBad term=none cterm=none ctermbg=52 gui=none guibg=#5f0000
@@ -100,8 +99,8 @@ highlight default link SpellCap SpellBad
 highlight default link SpellLocal SpellBad
 highlight default link SpellRare SpellBad
 
+highlight IncSearch cterm=reverse ctermfg=178 ctermbg=236 gui=reverse guifg=#dfaf00 guibg=#303030
 if exists('##CmdlineEnter')
-  highlight IncSearch cterm=reverse ctermfg=178 ctermbg=236 gui=reverse guifg=#dfaf00 guibg=#303030
   augroup landscape-highlight-search
     autocmd!
     autocmd CmdlineEnter /,\? :highlight Search cterm=reverse ctermfg=100 ctermbg=236 gui=reverse guifg=#878700 guibg=#303030
@@ -112,6 +111,5 @@ endif
 " Conceal
 " CursorIM
 " Directory
-" ModeMsg
 " MoreMsg
 " Question

@@ -7,7 +7,7 @@ let s:c = {
   \ 'darkestgreen'   : [22, '#005f00'],
   \ 'darkgreen'      : [28, '#008700'],
   \
-  \ 'darkestcyan'    : [21, '#0000ff'],
+  \ 'brightblue'    : [21, '#0000ff'],
   \ 'mediumcyan'     : [117, '#87dfff'],
   \
   \ 'darkestblue'    : [24, '#005f87'],
@@ -42,8 +42,8 @@ let s:c = {
   \ }
 
 " Normal mode
-let s:N1 = [ 'darkestcyan', 'white' ]
-let s:N2 = [ 'white', 'darkestcyan' ]
+let s:N1 = [ 'brightblue', 'white' ]
+let s:N2 = [ 'white', 'brightblue' ]
 let s:N3 = [ 'white', 'gray2' ]
 
 " Insert mode
@@ -61,7 +61,7 @@ let s:R1 = [ 'mediumred', 'white' ]
 let s:R2 = [ 'white', 'mediumred' ]
 let s:R3 = [ 'white', 'gray2' ]
 
-" Replace mode
+" Replace mode (emphasis)
 let s:RE = [ 'mediumred', 'white' ]
 
 let s:file = copy(s:N3)
